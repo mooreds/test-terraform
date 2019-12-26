@@ -25,15 +25,7 @@ resource "aws_s3_bucket" "b" {
 
   tags = {
     Name        = "My bucket"
+    AnotherTag        = "tag"
     Environment = "Dev"
-  }
-   lifecycle_rule {
-    id      = "tmp"
-    prefix  = "tmp/"
-    enabled = true
-
-    expiration {
-      date = "2020-02-16"
-    }
   }
 }
