@@ -33,7 +33,7 @@ resource "aws_s3_bucket" "b" {
     enabled = true
 
     expiration {
-      date = "2020-01-12"
+      date = "2020-01-16"
     }
   }
 }
